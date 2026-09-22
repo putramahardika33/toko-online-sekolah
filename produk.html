@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Sekolah - Produk</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fb;
+            color: #1f2937;
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: #2563eb;
+            color: white;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h2 {
+            font-size: 22px;
+        }
+
+        nav div {
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .header {
+            text-align: center;
+            padding: 60px 20px 30px;
+        }
+
+        .header h1 {
+            color: #1d4ed8;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #6b7280;
+        }
+
+        .products {
+            padding: 20px 8% 60px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .icon {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .card h2 {
+            color: #1d4ed8;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #6b7280;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            color: #111827 !important;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #111827;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 800px) {
+            .products {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav div {
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <h2>Toko Sekolah</h2>
+
+        <div>
+            <a href="index.html">Home</a>
+            <a href="produk.html">Produk</a>
+            <a href="kontak.html">Kontak</a>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <section class="header">
+        <h1>Produk Pilihan</h1>
+
+        <p>
+            Berbagai kebutuhan sekolah tersedia di sini.
+        </p>
+    </section>
+
+    <!-- PRODUK -->
+    <section class="products">
+
+        <div class="card">
+            <div class="icon">👕</div>
+
+            <h2>Seragam Sekolah</h2>
+
+            <p>
+                Seragam sekolah berkualitas
+                untuk kebutuhan siswa.
+            </p>
+
+            <p class="price">
+                Rp100.000
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">📚</div>
+
+            <h2>Buku Tulis</h2>
+
+            <p>
+                Buku tulis untuk kebutuhan
+                belajar di sekolah.
+            </p>
+
+            <p class="price">
+                Rp15.000
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">✏️</div>
+
+            <h2>Alat Tulis</h2>
+
+            <p>
+                Paket alat tulis untuk
+                kebutuhan sekolah.
+            </p>
+
+            <p class="price">
+                Rp25.000
+            </p>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Toko Online Sekolah</p>
+    </footer>
+
+</body>
+</html>

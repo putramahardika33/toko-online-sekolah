@@ -1,0 +1,16 @@
+Options -Indexes
+ErrorDocument 404  http://localhost
+ErrorDocument 403  http://localhost
+
+# Block direct access to the VCS directory and DB/schema dumps
+RedirectMatch 404 /\.git
+
+<FilesMatch "\.(sql|sh|log|env|md)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
