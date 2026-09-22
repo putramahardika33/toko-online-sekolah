@@ -3,40 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toko Online Sekolah</title>
+    <title>Toko Sekolah - Beranda</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fb;
+            color: #1f2937;
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: #2563eb;
+            color: white;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h2 {
+            font-size: 22px;
+        }
+
+        nav div {
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            min-height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 8%;
+            background: linear-gradient(135deg, #dbeafe, #eff6ff);
+        }
+
+        .hero-content {
+            max-width: 700px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            color: #1d4ed8;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #4b5563;
+            margin-bottom: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #2563eb;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background-color: #1d4ed8;
+        }
+
+        .info {
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        .info h2 {
+            color: #1d4ed8;
+            margin-bottom: 15px;
+        }
+
+        .info p {
+            max-width: 650px;
+            margin: auto;
+            color: #6b7280;
+        }
+
+        footer {
+            background-color: #111827;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav div {
+                gap: 15px;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
+    <!-- NAVBAR -->
     <nav>
         <h2>Toko Sekolah</h2>
+
+        <div>
+            <a href="index.html">Home</a>
+            <a href="produk.html">Produk</a>
+            <a href="kontak.html">Kontak</a>
+        </div>
     </nav>
 
-    <main>
-        <h1>Selamat Datang di Toko Sekolah</h1>
-        <p>Website toko online sekolah.</p>
-    </main>
-    <section>
-    <h2>Produk Pilihan</h2>
+    <!-- HERO / BAGIAN UTAMA -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Selamat Datang di Toko Sekolah</h1>
 
-    <div>
-        <h3>Seragam Sekolah</h3>
-        <p>Seragam sekolah berkualitas.</p>
-        <p>Rp100.000</p>
-    </div>
+            <p>
+                Website toko online sekolah yang menyediakan
+                berbagai kebutuhan untuk siswa.
+            </p>
 
-    <div>
-        <h3>Buku Tulis</h3>
-        <p>Buku tulis untuk kebutuhan sekolah.</p>
-        <p>Rp15.000</p>
-    </div>
+            <a href="produk.html" class="button">
+                Lihat Produk
+            </a>
+        </div>
+    </section>
 
-    <div>
-        <h3>Alat Tulis</h3>
-        <p>Paket alat tulis sekolah.</p>
-        <p>Rp25.000</p>
-    </div>
-</section>
+    <!-- INFORMASI -->
+    <section class="info">
+        <h2>Tentang Toko Kami</h2>
 
+        <p>
+            Toko Sekolah menyediakan berbagai perlengkapan
+            yang dapat membantu memenuhi kebutuhan siswa
+            dalam kegiatan belajar di sekolah.
+        </p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Toko Online Sekolah</p>
+    </footer>
 
 </body>
 </html>
